@@ -6,12 +6,7 @@ pub fn solve() -> anyhow::Result<()> {
         "Total accesible rolls (PART 1): {}",
         input.accessible_rolls()
     );
-    let mut total_removed = 0;
-    while let c = input.remove_accesibles()
-        && c > 0
-    {
-        total_removed += c;
-    }
+    let total_removed = input.remove_accesibles();
     println!("Total removed rolls (PART 2): {}", total_removed);
     Ok(())
 }
