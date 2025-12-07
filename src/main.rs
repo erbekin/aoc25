@@ -23,6 +23,7 @@ fn main() -> anyhow::Result<()> {
         4 => day4::solve(),
         5 => day5::solve(),
         6 => day6::solve(),
+        7 => day7::solve(),
         _ => {
             bail!("The day has not been lived yet");
         }
